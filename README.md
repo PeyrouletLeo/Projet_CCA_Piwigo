@@ -50,8 +50,8 @@ Lors du premier accès à l'une des instances Piwigo, vous serez guidé à trave
 1. Sélectionnez la langue par défaut pour votre galerie.
 2. Configurez la base de données en entrant les informations suivantes :
    - **Hôte :** `mariadb` (le nom du service MariaDB dans le fichier `docker-compose.yml`)
-   - **Utilisateur :** (le nom d'utilisateur de la base de données, par exemple `user`)
-   - **Mot de passe :** (le mot de passe de la base de données que vous avez défini)
+   - **Utilisateur :** `user` (le nom d'utilisateur de la base de données, par exemple `user`)
+   - **Mot de passe :** `password` (le mot de passe de la base de données que vous avez défini)
    - **Nom de la base de données :** `piwigo_db` (ou le nom que vous avez spécifié dans `docker-compose.yml`)
    - **Préfixe des tables :** (par défaut, cela peut être laissé comme `piwigo_`)
 
