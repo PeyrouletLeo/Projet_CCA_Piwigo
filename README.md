@@ -20,11 +20,11 @@ Les conteneurs sont configurés pour communiquer sur un réseau Docker personnal
 
 1. **Cloner le Répertoire :**
 
-   Clonez ce dépôt sur votre machine locale :
+Clonez ce dépôt sur votre machine locale :
 
-   ```bash
-   git clone https://github.com/PeyrouletLeo/Projet_CCA_Piwigo
-   cd Projet_CCA_Piwigo
+```bash
+git clone https://github.com/PeyrouletLeo/Projet_CCA_Piwigo
+cd Projet_CCA_Piwigo
 
 2. **Configuration :**
 
