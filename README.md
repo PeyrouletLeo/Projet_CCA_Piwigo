@@ -38,12 +38,32 @@ Les conteneurs sont configurés pour communiquer sur un réseau Docker personnal
   ```
 ## Utilisation
 
-Après le lancement, Piwigo sera accessible via :
+Une fois les conteneurs lancés, vous pouvez accéder aux instances Piwigo via les adresses suivantes dans votre navigateur web :
 
 - **Piwigo 1 :** `http://localhost:81`
 - **Piwigo 2 :** `http://localhost:82`
 
-Vous pouvez vous connecter à l'interface d'administration de Piwigo en utilisant les identifiants configurés lors de l'initialisation de la base de données MariaDB.
+### Configuration Initiale de Piwigo
+
+Lors du premier accès à l'une des instances Piwigo, vous serez guidé à travers un processus d'installation. Voici les étapes à suivre :
+
+1. Sélectionnez la langue par défaut pour votre galerie.
+2. Configurez la base de données en entrant les informations suivantes :
+   - **Hôte :** `mariadb` (le nom du service MariaDB dans le fichier `docker-compose.yml`)
+   - **Utilisateur :** (le nom d'utilisateur de la base de données, par exemple `user`)
+   - **Mot de passe :** (le mot de passe de la base de données que vous avez défini)
+   - **Nom de la base de données :** `piwigo_db` (ou le nom que vous avez spécifié dans `docker-compose.yml`)
+   - **Préfixe des tables :** (par défaut, cela peut être laissé comme `piwigo_`)
+
+3. Créez le compte administrateur en fournissant un nom d'utilisateur, un mot de passe et une adresse e-mail.
+
+### Synchronisation des Images
+
+Après l'installation, les images ajoutées par le script d'entrypoint doivent être synchronisées avec la base de données Piwigo pour qu'elles apparaissent dans votre galerie :
+
+1. Connectez-vous à l'interface d'administration de Piwigo.
+2. Allez dans la section `Outils` et choisissez `Synchroniser`.
+3. Sélectionnez le dossier `/galleries/` pour synchron
 
 ## Personnalisation
 
