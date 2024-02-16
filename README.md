@@ -24,6 +24,7 @@ Les conteneurs sont configurés pour communiquer sur un réseau Docker personnal
   ```bash
   git clone https://github.com/PeyrouletLeo/Projet_CCA_Piwigo
   cd Projet_CCA_Piwigo
+  ```
 
 2. **Configuration :**
 
@@ -34,3 +35,4 @@ Les conteneurs sont configurés pour communiquer sur un réseau Docker personnal
   Utilisez Docker Compose pour construire et démarrer les services :
   ```bash
   docker-compose up --build
+  ```
