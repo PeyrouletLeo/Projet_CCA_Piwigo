@@ -23,5 +23,5 @@ Les conteneurs sont configurés pour communiquer sur un réseau Docker personnal
    Clonez ce dépôt sur votre machine locale :
 
    ```bash
-   git clone [URL_DU_DEPOT]
-   cd [NOM_DU_DEPOT]
+   git clone [https://github.com/PeyrouletLeo/Projet_CCA_Piwigo)https://github.com/PeyrouletLeo/Projet_CCA_Piwigo]
+   cd [Projet_CCA_Piwigo]
