@@ -55,7 +55,7 @@ Lors du premier accès à l'une des instances Piwigo, vous serez guidé à trave
    - **Nom de la base de données :** `piwigo_db` (ou le nom que vous avez spécifié dans `docker-compose.yml`)
    - **Préfixe des tables :** (par défaut, cela peut être laissé comme `piwigo_`)
 
-3. Créez le compte administrateur en fournissant un nom d'utilisateur, un mot de passe et une adresse e-mail.
+3. Créez le compte administrateur en fournissant un nom d'utilisateur, un mot de passe et une adresse e-mail (on peut utiliser une fausse adresse mail, par exemple `test@test.com`)
 
 ### Synchronisation des Images
 
