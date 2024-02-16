@@ -36,3 +36,17 @@ Les conteneurs sont configurés pour communiquer sur un réseau Docker personnal
   ```bash
   docker-compose up --build
   ```
+## Utilisation
+
+Après le lancement, Piwigo sera accessible via :
+
+- **Piwigo 1 :** `http://localhost:81`
+- **Piwigo 2 :** `http://localhost:82`
+
+Vous pouvez vous connecter à l'interface d'administration de Piwigo en utilisant les identifiants configurés lors de l'initialisation de la base de données MariaDB.
+
+## Personnalisation
+
+- **Images Initiales :** Pour ajouter vos propres images initiales, placez-les dans le dossier `Images` avant de construire les conteneurs.
+- **Scripts d'Entrypoint :** Modifiez `entrypoint.sh` pour personnaliser la logique d'initialisation des conteneurs Piwigo.
+
