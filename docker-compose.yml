@@ -14,9 +14,9 @@ services:
       - ./Images:/initial_images
     ports:
       - "81:80"
-    restart: unless-stopped
     networks:
       - piwigo-net
+    restart: unless-stopped
 
   piwigo2:
     build:
@@ -33,9 +33,9 @@ services:
       - ./Images:/initial_images
     ports:
       - "82:80"
-    restart: unless-stopped
     networks:
       - piwigo-net
+    restart: unless-stopped
 
   mariadb:
     image: lscr.io/linuxserver/mariadb:latest
@@ -47,10 +47,10 @@ services:
       - MYSQL_PASSWORD=password
     volumes:
       - ./mariadb_data:/config
-    restart: unless-stopped
     networks:
       - piwigo-net
+    restart: unless-stopped
 
 networks:
- piwigo-net:
-  driver: bridge
+  piwigo-net:
+    driver: bridge
