@@ -62,8 +62,12 @@ Lors du premier accès à l'une des instances Piwigo, vous serez guidé à trave
 Après l'installation, les images ajoutées par le script d'entrypoint doivent être synchronisées avec la base de données Piwigo pour qu'elles apparaissent dans votre galerie :
 
 1. Connectez-vous à l'interface d'administration de Piwigo.
-2. Allez dans la section `Outils` et choisissez `Synchroniser`.
-3. Sélectionnez le dossier `/galleries/` pour synchroniser les images avec la base de données. Vous devrez peut-être également spécifier les options de synchronisation, comme inclure les sous-dossiers et synchroniser les métadonnées des fichiers.
+2. Allez dans la section `Outils` et choississez `Synchroniser` 
+3. Sélectionnez le dossier `/galleries/` pour synchroniser les images avec la base de données. 
+4. Faites les modifications suivantes :
+   - Choississez la case `Répertoires + fichiers` et cochez `Affichez un maximum d'informations`
+   - Décochez la case : `Simuler uniquement (aucun changement ne sera fait dans la base de données)`
+5. Cliquez sur `Synchroniser`.
 
 ## Personnalisation
 
